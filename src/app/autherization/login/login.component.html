@@ -1,0 +1,13 @@
+<form [formGroup]='loginForm' (ngSubmit)='onFormSubmit(loginForm)' class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label for="userName" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="userNmae" placeholder="User Name" formControlName='username'>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" formControlName='password'>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-secondary" type="submit">Login</button>
+      </div>
+    </form>
